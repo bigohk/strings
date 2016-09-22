@@ -3,15 +3,19 @@ Treating a String as **Graph** and then solving some interesting problems using 
 A couple of problems that I have encountered are the following...
 
 **Palindrome Decomposition**
+
 As an example the string `abacusu` can be broken into the following
+
 1. `a,b,a,c,u,s,u`
 2. `a,b,a,c,usu`
 3. `aba,c,u,s,u`
 
 **Breaking a given string into all possible sentences containing valid words**
+
 Consider the string `ilovedfstraversal`, and assume that a dictionary **D** of valid words is `D = {"i", "love", "d", "f", "s", "dfs", "traversal"}`
 
 In this case the following sentences can be generated
+
 1.`i love d f s traversal`
 2.`i love dfs traversal`
 
