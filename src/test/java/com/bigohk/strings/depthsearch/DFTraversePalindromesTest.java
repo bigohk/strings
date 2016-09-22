@@ -50,11 +50,11 @@ public class DFTraversePalindromesTest {
     final LinkedList<LinkedList<String>> results            = new LinkedList<>();
     ResultCollector                      palindromCollector = new PalindromeCollector(results);
 
-    String     expr     = "gagan";
+    String     expr     = "abacusu";
     DFTraverse traverse = new DFTraverse(expr, palindromeValidator, palindromCollector);
     traverse.search();
 
-    assertEquals(3, results.size());
+    assertEquals(4, results.size());
 
     for (LinkedList<String> list : results) {
       StringBuilder builder = new StringBuilder();
