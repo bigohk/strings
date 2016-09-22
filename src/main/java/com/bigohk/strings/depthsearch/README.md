@@ -9,6 +9,7 @@ As an example the string `abacusu` can be broken into the following
 1. `a,b,a,c,u,s,u`
 2. `a,b,a,c,usu`
 3. `aba,c,u,s,u`
+4. `aba,c,usu`
 
 **Breaking a given string into all possible sentences containing valid words**
 
@@ -49,3 +50,4 @@ ResultCollector collector = new SomeResultCollector();
 DFTraverse dft = new DFTraverse(expr, validator, collector);
 dft.search();
 ```
+
