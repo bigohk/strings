@@ -49,4 +49,3 @@ ResultCollector collector = new SomeResultCollector();
 DFTraverse dft = new DFTraverse(expr, validator, collector);
 dft.search();
 ```
-
