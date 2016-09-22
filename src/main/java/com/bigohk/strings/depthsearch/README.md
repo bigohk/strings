@@ -27,6 +27,26 @@ Recursively generating substrings will solve the problem but I thought about avo
 
 In the code here, the search and validation are abstracted out completely. The consumer can supply a validator and pass it into the traversal/search logic. The traversal logic will simply callback into the validator and when one of the search path is terminated, it will also callback into a result collector which can do whatever it wants with the results.
 
+```java
+import com.bigohk.strings.depthsearch.DFTraverse;
+import com.bigohk.strings.depthsearch.Validator;
+import com.bigohk.strings.depthsearch.ResultCollector;
 
+//...
+//some code
+//...
 
+//The string expression which needs to be searched in
+String expr = "some expression";
+
+//Your validator
+Validator validator = new SomeValidator();
+
+//Your collector for collecting the results incrementally
+ResultCollector collector = new SomeResultCollector();
+
+//The traverser
+DFTraverse dft = new DFTraverse(expr, validator, collector);
+dft.search();
+```
 
