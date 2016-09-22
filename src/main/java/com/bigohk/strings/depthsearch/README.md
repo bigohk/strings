@@ -16,8 +16,8 @@ Consider the string `ilovedfstraversal`, and assume that a dictionary **D** of v
 
 In this case the following sentences can be generated
 
-1.`i love d f s traversal`
-2.`i love dfs traversal`
+1. `i love d f s traversal`
+2.  `i love dfs traversal`
 
 Both of the above problems have the same *foundation algorithm* i.e. pick a starting point in the string and then incrementally check all substrings of increasing lengths to check whether that substring ***is valid(per some rule)***, and then do this ***recursively*** for the remaining string ending at the ***valid*** substring OR the next character.
 
