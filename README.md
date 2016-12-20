@@ -1,4 +1,4 @@
-##A collection of interesting coding problems/puzzles related to Strings
+#A collection of interesting coding problems/puzzles related to Strings
 
 All the code is organised under `com.bigohk.strings` package in source directory
 
